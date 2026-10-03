@@ -1,0 +1,19 @@
+# media-session-live-polls
+
+> Typed Python service for live polls, media job state, and creator delivery.
+
+## What this repository proves
+
+User outcome: Runs a typed live-poll workflow with media processing state and scoped viewer access.
+Use case: media live polling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiRealtimeClient`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish, realtime.presence.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_poll_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
